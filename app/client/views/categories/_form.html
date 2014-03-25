@@ -1,0 +1,23 @@
+<template name="categoryForm">
+    <div class="row formShowHide" style="display: none;">
+        <div class="col-md-9" role="main">
+            <div class="form-container">
+                <h4>Add Category</h4>
+
+                <form role="form">
+                    <div class="form-group">
+                        <label for="categoryTitle">Title</label>
+                        <input type="text" class="form-control" id="categoryTitle" placeholder="Enter category title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoryDesc">Description</label>
+                        <input type="text" class="form-control" id="categoryDesc"
+                               placeholder="Enter category description">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="addCategory">Submit</button>
+                    <input type="hidden"  id="categoryID">
+                </form>
+            </div>
+        </div>
+    </div>
+</template>

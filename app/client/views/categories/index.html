@@ -1,0 +1,28 @@
+<template name="categories">
+   {{> categoryForm }}
+    <div class="row">
+        <div class="col-md-9" role="main">
+            <h2 class="page-header">Categories <button type="button" class="btn btn-default" id="buttonShowHide">Add New</button></h2>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each categories}}
+                <tr>
+                    <td>{{title}}</td>
+                    <td>{{description}}</td>
+                    <td><a href="#" class="editButton">Edit</a> | <a href="#" class="removeButton">Remove</a></td>
+                </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</template>

@@ -1,0 +1,49 @@
+<template name="purchaseForm">
+    <div class="row formShowHide">
+        <div class="col-md-9" role="main">
+            <div class="form-container">
+                <h4>Purchase Form</h4>
+
+                <form role="form">
+
+                    <div class="form-group">
+                        <label for="purchaseVendor">Select Vendor</label>
+                        <select  id="purchaseVendor" class="form-control" >
+                            {{#each vendors}}
+                            <option value="{{_id}}">{{title}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="purchaseProduct">Select Product</label>
+                        <select  id="purchaseProduct" class="form-control" >
+                            {{#each products}}
+                                <option value="{{_id}}">{{title}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="purchaseDate">Date</label>
+                        <input type="text" class="form-control datepicker" id="purchaseDate" placeholder="Select Purchase Date" readonly required style="width: auto;">
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="purchaseQuantity">Quantity</label>
+                        <input type="text" class="form-control" id="purchaseQuantity" placeholder="Enter Quantity" required style="width: auto;">
+                    </div>
+                    <div class="form-group">
+                        <label for="purchaseRate">Rate</label>
+                        <input type="text" class="form-control" id="purchaseRate" placeholder="Enter Rate" required style="width: auto;">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="addStore">Submit</button>
+                    <input type="hidden"  id="storeID">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</template>

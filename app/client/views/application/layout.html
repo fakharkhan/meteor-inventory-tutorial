@@ -1,0 +1,23 @@
+<template name="layout">
+    {{> navbar}}
+    <div class="container">
+        {{#if currentUser}}
+             {{yield}}
+        {{else}}
+        <h1>Please log in to enter in application.</h1>
+        {{/if}}
+
+    </div>
+</template>
+
+<template name="home">
+    <h1>Welcome to Meteor Inventory System</h1>
+</template>
+
+<template name="_loginButtonsAdditionalLoggedInDropdownActions">
+    <button class="btn btn-default btn-block" id="login-buttons-edit-profile">Edit profile</button>
+</template>
+
+<template name="profileEdit">
+    <h1>Edit Profile</h1>
+</template>

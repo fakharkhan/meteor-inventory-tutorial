@@ -1,0 +1,25 @@
+<template name="storeForm">
+    <div class="row formShowHide" style="display: none;">
+        <div class="col-md-9" role="main">
+            <div class="form-container">
+                <h4>Add Store</h4>
+
+                <form role="form">
+                    <div class="form-group">
+                        <label for="storeTitle">Title</label>
+                        <input type="text" class="form-control" id="storeTitle" placeholder="Enter store title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="storeDesc">Description</label>
+                        <input type="text" class="form-control" id="storeDesc"
+                               placeholder="Enter store description">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="addStore">Submit</button>
+                    <input type="hidden"  id="storeID">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</template>

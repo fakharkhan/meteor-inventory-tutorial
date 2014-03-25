@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "iron-router": {},
+    "bootstrap-3": {},
+    "mongo-counter": {},
+    "accounts-ui-bootstrap-3": {},
+    "bootstrap-datepicker": {
+        "path": "packages/meteor-bootstrap-datepicker"
+    }
+
+  }
+}
